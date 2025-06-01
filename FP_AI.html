@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Rekomendasi Sederhana</title>
+    <!-- Link ke file CSS terpisah -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Rekomendasi Sederhana</h1>
+        
+        <div class="content-section">
+            <h2>Artikel Tersedia</h2>
+            <div id="content-list"></div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Preferensi Anda</h2>
+            <div class="user-preferences" id="userPreferences">
+                <p>Belum ada preferensi. Silakan pilih beberapa artikel yang Anda sukai.</p>
+            </div>
+            <button class="btn reset-btn" onclick="resetPreferences()">Reset Preferensi</button>
+        </div>
+        
+        <div class="recommendations" id="recommendations">
+            <h2>Rekomendasi untuk Anda</h2>
+            <p>Pilih beberapa artikel yang Anda sukai untuk mendapatkan rekomendasi.</p>
+        </div>
+        
+        <div class="model-info">
+            <h3>Informasi Model</h3>
+            <p>Model pembelajaran yang digunakan: <strong>Collaborative Filtering Sederhana</strong></p>
+            <p>Tingkat akurasi model:</p>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 0%">0%</div>
+            </div>
+            <p id="modelDetails">Tidak ada data pembelajaran yang cukup.</p>
+        </div>
+    </div>
+
+    <!-- Link ke file JavaScript terpisah -->
+    <script src="script.js"></script>
+</body>
+</html>
